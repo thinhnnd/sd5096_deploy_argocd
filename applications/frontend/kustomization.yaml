@@ -1,14 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
 images:
-  - name: 309276322609.dkr.ecr.ap-southeast-1.amazonaws.com/frontend
-    newTag: '26'
-
+- name: 309276322609.dkr.ecr.ap-southeast-1.amazonaws.com/frontend
+  newTag: "31"
 commonAnnotations:
-  image-updater.argoproj.io/interval: "1m"  # Check for updates every 1 minutes
-  image-updater.argoproj.io/enabled: "true"  # Enable ArgoCD Image Updater
-
+  image-updater.argoproj.io/interval: "1m" # Check for updates every 1 minutes
+  image-updater.argoproj.io/enabled: "true" # Enable ArgoCD Image Updater
 resources:
-  - deployment.yaml
-  - service.yaml
+- deployment.yaml
+- service.yaml
