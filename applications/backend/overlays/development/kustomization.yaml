@@ -6,7 +6,7 @@ resources:
 
 images:
   - name: 309276322609.dkr.ecr.ap-southeast-1.amazonaws.com/backend
-    newTag: 10
+    newTag: '10'
 
 commonAnnotations:
   image-updater.argoproj.io/interval: "1m"  # Check for updates every 1m minutes
