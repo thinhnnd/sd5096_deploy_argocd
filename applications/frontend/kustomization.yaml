@@ -8,11 +8,6 @@ images:
 commonAnnotations:
   image-updater.argoproj.io/interval: "1m"  # Check for updates every 1 minutes
   image-updater.argoproj.io/enabled: "true"  # Enable ArgoCD Image Updater
-  argocd-image-updater.argoproj.io/image-list: 309276322609.dkr.ecr.ap-southeast-1.amazonaws.com/frontend:*
-  argocd-image-updater.argoproj.io/write-back-method: git       
-  argocd-image-updater.argoproj.io/git-branch: master      
-  argocd-image-updater.argoproj.io/write-back-target: kustomization
-  argocd-image-updater.argoproj.io/myalias.force-update: "true"
 
 resources:
   - deployment.yaml
